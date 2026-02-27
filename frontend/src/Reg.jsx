@@ -18,10 +18,7 @@ function Reg()
       try
       {
         //  const res=await axios.post("http://localhost:8080/reg",data)
-        const res = await axios.post(
-        "https://cabsystemsms-1.onrender.com/register",
-        data
-      )
+        const res = await axios.post("http://localhost:8085/register", data)
          alert(res.data)
       } 
       catch(xyz)
